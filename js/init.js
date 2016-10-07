@@ -66,9 +66,11 @@
 ------------------------------------------------------ */
 
    $('header').css({ 'height': $(window).height() });
+   $('header').css({ 'height': 0 });
    $(window).on('resize', function() {
 
-        $('header').css({ 'height': $(window).height() });
+        // $('header').css({ 'height': $(window).height() });
+        $('header').css({ 'height': 0 });
         $('body').css({ 'width': $(window).width() })
    });
 
